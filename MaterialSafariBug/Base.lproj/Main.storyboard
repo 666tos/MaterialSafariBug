@@ -18,18 +18,30 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OSB-e9-WqT">
-                                <rect key="frame" x="139" y="328.5" width="96" height="30"/>
-                                <state key="normal" title="Present Safari"/>
-                                <connections>
-                                    <action selector="openSafariPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="aWC-KB-XKB"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="eiC-FU-sW3">
+                                <rect key="frame" x="115.5" y="313.5" width="144" height="60"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OSB-e9-WqT">
+                                        <rect key="frame" x="0.0" y="0.0" width="144" height="30"/>
+                                        <state key="normal" title="Present buggy Safari"/>
+                                        <connections>
+                                            <action selector="openBuggySafariPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="yt9-en-2U7"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z7g-Jk-ZAB">
+                                        <rect key="frame" x="0.0" y="30" width="144" height="30"/>
+                                        <state key="normal" title="Present Safari"/>
+                                        <connections>
+                                            <action selector="openSafariPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="AVU-Ws-IJa"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="OSB-e9-WqT" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="Nh5-8r-V6u"/>
-                            <constraint firstItem="OSB-e9-WqT" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Uej-Dh-EFN"/>
+                            <constraint firstItem="eiC-FU-sW3" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="0fW-NW-kLN"/>
+                            <constraint firstItem="eiC-FU-sW3" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="RLb-P2-NsL"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
